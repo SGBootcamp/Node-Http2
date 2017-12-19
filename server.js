@@ -7,4 +7,13 @@ const server = http2.createSecureServer({
     key: fs.readFileSync(path.join(__dirname, '/key.pem'))
 });
 
+server.on('stream', (stream, headers) => {
+    stream.respond({
+        'content-type': 'text/html',
+        ':status': 200
+    });
+
+    stream.end('<h1>Hello World</h1>');
+});
+
 server.listen(3000);
