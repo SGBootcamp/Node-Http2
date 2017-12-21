@@ -1,0 +1,15 @@
+{
+  "name": "SGBootcamp-node-http2",
+  "version": "0.0.1",
+  "description": "Example of http2 server with node",
+  "main": "server.js",
+  "author": "Siro Ramírez <sramirez@solidgeargroup.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SGBootcamp/Node-Http2.git"
+  },
+  "dependencies": {
+    "mime": "^2.0.3"
+  }
+}
